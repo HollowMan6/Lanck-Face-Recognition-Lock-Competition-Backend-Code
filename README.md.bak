@@ -35,7 +35,7 @@
 # Lanck Face Recognition Lock Competition Backend Code
 
 This is a version of the Lanck Face Recognition Competition Backend Code by Teamwork.
-Our team won the third prize and 1000 yuan prize in Lanzhou University Lanke Club [Face Recognition Access Control System Competition](http://lanck.lzu.edu.cn/?P=456), which is the result of our team's cooperation.
+Our team won the third prize and 1000 yuan prize in Lanzhou University Lanke Club [Lanck Face Recognition Lock Competition](http://lanck.lzu.edu.cn/?P=456), which is the result of our team's cooperation.
 
 We refer to a lot of information during the competition, and here are no longer listed one by one. Our project is not perfect, there are some problems such as low accuracy of face recognition. Now I open source the back-end code, hoping to give you some reference.
 
@@ -55,7 +55,7 @@ Our back end is divided into two parts: server side and development board side.
 
 Development board end:
 
-In the input function, run [FaceDataCollect.py](./Development-Board/DetectBlinks.py), the program will automatically intercept 200 pictures of the camera and send them to the server. Please enter your name and campus card number. The campus card number must be 12.
+In the input function, run [FaceDataCollect.py](./Development-Board/FaceDataCollect.py), the program will automatically intercept 200 pictures of the camera and send them to the server. Please enter your name and campus card number. The campus card number must be 12.
 
 In recognition function, first, after detecting someone in front of him or her and being waked up, run [DetectBlinks.py](./Development-Board/DetectBlinks.py). Its principle is to detect whether a person is blinking in order to determine whether it is a real person, not a photograph, so as to carry out live detection. After being identified as a real person, running [FaceRecognitionCollect.py](./Development-Board/FaceRecognitionCollect.py), the program will automatically intercept 20 photos of the camera and send them to the server for identification.
 
