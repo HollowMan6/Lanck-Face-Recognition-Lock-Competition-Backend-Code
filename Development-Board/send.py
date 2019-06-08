@@ -13,7 +13,7 @@ def socket_client(filepath):
         # socket参数配置 Parameter configuration
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # 在这里填入正确的ip 和端口号 fill in correct ip and port number here
-        s.connect(('172.23.205.196', 8008))
+        s.connect(('127.0.0.1', 8008))
     except socket.error as msg:
         print(msg)
         sys.exit(1)
