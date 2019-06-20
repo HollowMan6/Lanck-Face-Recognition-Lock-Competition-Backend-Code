@@ -3,11 +3,13 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/)
 
-我们团队在兰州大学兰客社[人脸识别门禁系统大赛](http://lanck.lzu.edu.cn/?p=456)之中荣获三等奖与1000元奖金，这是我们团队合作完成的比赛成果。
+我们团队在兰州大学兰客社[人脸识别门禁系统大赛](http://lanck.lzu.edu.cn/?p=456)之中荣获[三等奖与1000元奖金](http://lanck.lzu.edu.cn/?p=473)，这是我们团队合作完成的比赛成果。
 
 在比赛之中我们参考了很多资料，这里不再一一列出。我们的项目并非十分完美，存在人脸识别准确率过低等问题。现在我将后端代码开源出来，希望能够给大家一些参考。
 
 具体比赛细则和参考资料请参见[Materials](./Materials)文件夹，里面提供了详细的说明资料。
+
+这是我们的[答辩ppt](Lanck_Team8.pptx):
 
 前期我们准备采用[这里的方法](https://github.com/HollowMan6/Building-CCTV)进行构建，但由于诸多缺点，最终放弃了这种方法。
 
@@ -40,11 +42,13 @@
 # Lanck Face Recognition Lock Competition Backend Code
 
 This is a version of the Lanck Face Recognition Competition Backend Code by Teamwork.
-Our team won the third prize and 1000 yuan prize in Lanzhou University Lanke Club [Lanck Face Recognition Lock Competition](http://lanck.lzu.edu.cn/?P=456), which is the result of our team's cooperation.
+Our team won [the third prize and 1000 yuan prize](](http://lanck.lzu.edu.cn/?p=473)) in Lanzhou University Lanck Club [Lanck Face Recognition Lock Competition](http://lanck.lzu.edu.cn/?P=456), which is the result of our team's cooperation.
 
 We refer to a lot of information during the competition, and here are no longer listed one by one. Our project is not perfect, there are some problems such as low accuracy of face recognition. Now I open source the back-end code, hoping to give you some reference.
 
 See the [Materials](./Materials) folder for details of the competition rules and references. Detailed instructions are provided.
+
+Here is our [Introducing PPT](Lanck_Team8.pptx):
 
 In the early stage, we were going to adopt [the method here](https://github.com/HollowMan6/Building-CCTV) to build, but because of many shortcomings, we finally abandoned this method.
 
