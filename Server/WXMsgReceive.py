@@ -7,7 +7,6 @@
  
 import json
 from wsgiref.simple_server import make_server
-import urllib.parse
 import re
 from socket import *
 import sys

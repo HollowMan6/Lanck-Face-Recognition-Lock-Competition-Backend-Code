@@ -2,11 +2,7 @@
 
 # 导入库 Import Library
 import socket
-import os
 import sys
-import struct
-import cv2
-import numpy as np
 
 def socket_client(string):
     try:

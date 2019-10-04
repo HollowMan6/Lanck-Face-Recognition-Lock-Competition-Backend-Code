@@ -2,8 +2,6 @@
 #导入模块
 import cv2
 import os
-import time
-import send
 import numpy as np
 from PIL import Image
 from PIL import ImageFile

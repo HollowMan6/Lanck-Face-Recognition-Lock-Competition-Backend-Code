@@ -3,7 +3,6 @@
 # 导入库 Import Library
 import socket
 import threading
-import time
 import sys
 import os
 import struct
@@ -17,13 +16,12 @@ import GetFaceDataCollectSuccessFlag
 
 # 查询本机ip地址 get host ip
 def get_host_ip():
-    try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        s.connect(('8.8.8.8', 80))
-        ip = s.getsockname()[0]
-    finally:
-        s.close()
-
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+        try:
+            s.connect(('8.8.8.8', 80))
+            ip = s.getsockname()[0]
+        except Exception:
+            pass
     return ip
 
 
@@ -105,7 +103,7 @@ def deal_data(conn, addr):
                             fp.write(data)
                         fp.close()
                         if GetFaceDataCollectSuccessFlag.get_FaceDataCollectSuccess_flag(int(fn[5:-9])) == 0:
-                            FaceDataCollectSuccess_flag=0
+                            pass
                     else:
                         fp = open("./Data/"+fn, 'wb')
                         print('开始接收...')  # Begin receiving

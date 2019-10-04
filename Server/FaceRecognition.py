@@ -1,7 +1,6 @@
 # -*- coding=utf-8 -*-
 
 #=====PART4 人脸识别=====
-import numpy as np
 import cv2
 import os
 from PIL import Image
@@ -33,7 +32,6 @@ def face_recognition(index,FaceRecognitionCollectSuccess_flag):
 
         names,cards=getNames()
         recognizer.read('face_trainer/trainer.yml')
-        font = cv2.FONT_HERSHEY_SIMPLEX
 
         #筛选'jpg'文件并加入到paths列表中
         paths=[]
