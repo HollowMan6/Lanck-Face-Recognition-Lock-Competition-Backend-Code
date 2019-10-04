@@ -1,16 +1,15 @@
 
 # 用于实现微信小程序一键开锁
 from socket import *
-import sys
 
 
 def get_host_ip():
-    try:
-        s = socket(AF_INET, SOCK_DGRAM)
-        s.connect(('8.8.8.8', 80))
-        ip = s.getsockname()[0]
-    finally:
-        s.close()
+    with socket(AF_INET, SOCK_DGRAM) as s:
+        try:
+            s.connect(('8.8.8.8', 80))
+            ip = s.getsockname()[0]
+        except Exception:
+            pass
     return ip
 
 

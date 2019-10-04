@@ -5,9 +5,6 @@
 import send
 import cv2
 import os
-import time
-import numpy as np
-from PIL import Image,ImageDraw,ImageFont
 import random
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()

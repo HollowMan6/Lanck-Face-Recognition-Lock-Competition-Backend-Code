@@ -5,8 +5,6 @@ import socket
 import os
 import sys
 import struct
-import cv2
-import numpy as np
 
 def socket_client(filepath):
     try:

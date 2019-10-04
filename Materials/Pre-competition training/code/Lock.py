@@ -42,7 +42,6 @@ def unlock():
 #获取本机IP地址
 # 与谷歌的公共DNS服务器 8.8.8.8:80建立socket连接 再返回本地socket地址
 def get_host():
-    host="0.0.0.0"
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.connect(('8.8.8.8', 80))
@@ -54,13 +53,12 @@ def get_host():
 #host是包含ip和port的元组 content为utf8字符串
 def send_data(host,content):
     content=bytes(content,encoding="utf8")
-    client_socket=socket.socket()
-    try:
-        client_socket.connect(host)
-        client_socket.send(content)
-    except:
-        print("Connect to ",host," Fail!")
-    client_socket.close()
+    with socket.socket() as client_socket:
+        try:
+            client_socket.connect(host)
+            client_socket.send(content)
+        except Exception:
+            print("Connect to ",host," Fail!")
 
 #后端地址
 dst_host=["172.16.252.137",8001]

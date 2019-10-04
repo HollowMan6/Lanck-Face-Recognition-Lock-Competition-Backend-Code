@@ -41,14 +41,12 @@ def Server_run(server_socket,dst_host):
 #host是包含ip和port的元组 content为utf8字符串
 def send_data(host,content):
     content=bytes(content,encoding="utf8")
-    client_socket=socket.socket()
-    try:
-        client_socket.connect(host)
-        client_socket.send(content)
-    except:
-        print("Connect to ",host," Fail!")
-    finally:
-        client_socket.close()
+    with socket.socket() as client_socket:
+        try:
+            client_socket.connect(host)
+            client_socket.send(content)
+        except Exception:
+            print("Connect to ",host," Fail!")
 
 
 #后端地址
