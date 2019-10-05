@@ -1,9 +1,21 @@
 # 兰客社人脸识别门禁系统比赛后端代码
 
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![last-commit](https://img.shields.io/github/last-commit/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code)](../../graphs/commit-activity)
+
+[![Followers](https://img.shields.io/github/followers/HollowMan6?style=social)](https://github.com/HollowMan6?tab=followers)
+[![watchers](https://img.shields.io/github/watchers/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code?style=social)](../../watchers)
+[![stars](https://img.shields.io/github/stars/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code?style=social)](../../stargazers)
+[![forks](https://img.shields.io/github/forks/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code?style=social)](../../stargazers)
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://hollowman6.github.io/fund.html)
 [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/)
+[![Repo-Size](https://img.shields.io/github/repo-size/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code.svg)](../../archive/master.zip)
+
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code/context:python)
+
+(English version is down below)
+
 ## 简介
 
 我们团队在兰州大学兰客社[人脸识别门禁系统大赛](http://lanck.lzu.edu.cn/?p=456)之中荣获 **[三等奖与1000元奖金](http://lanck.lzu.edu.cn/?p=473)**，这是我们团队合作完成的比赛成果。
@@ -14,13 +26,13 @@
 
 这是我们的[*答辩ppt*](Lanck_Team8.pptx)
 
-前期我们准备采用[这里的方法](https://github.com/HollowMan6/Building-CCTV)进行构建，但由于诸多缺点，最终放弃了这种方法。
+前期我们准备采用[RSTP流直播的方法](https://github.com/HollowMan6/Building-CCTV/tree/master/Building-CCTV-With-RSTP-Stream-Using-ffsever)进行远程局域网内网络实时监控的构建，但由于诸多缺点，最终放弃了这种方法，而采用[OpenCV截图转发](https://github.com/HollowMan6/Building-CCTV/tree/master/Building-CCTV-With-OpenCV-Face-Recognition-Sending-Pictures)。
 
 我们的前端采用微信小程序进行开发。
 
 ## 下面我将对我负责编写的后端结构进行说明
 
-&emsp;&emsp;我们采用OPenCV实现人脸识别功能，并且使用Socket编程。
+&emsp;&emsp;我们采用OpenCV实现人脸识别功能，并且使用Socket编程。
 
 ***后端具体结构请参照这幅图：***
 
@@ -38,7 +50,7 @@
 
 * **服务器端**：
 
-&emsp;&emsp;使用screen窗口管理程序在后台始终运行[receive.py](./Server/receive.py)。该脚本会在接收到录入请求后，接收照片放在指定文件夹，并且在接收完毕后自动开始训练。当收到识别请求时，接受图片，进行识别，并返回数据。具体请参照源代码。
+&emsp;&emsp;使用Screen窗口管理程序在后台始终运行[receive.py](./Server/receive.py)。该脚本会在接收到录入请求后，接收照片放在指定文件夹，并且在接收完毕后自动开始训练。当收到识别请求时，接受图片，进行识别，并返回数据。具体请参照源代码。
 
 &emsp;&emsp;[WXMsgReceive.py](./Server/WXMsgReceive.py)为微信小程序端数据的接收。
 
@@ -56,14 +68,14 @@ See the [Materials](./Materials) folder for details of the competition rules and
 
 Here is our *[Introducing PPT](Lanck_Team8.pptx)*
 
-In the early stage, we were going to adopt [the method here](https://github.com/HollowMan6/Building-CCTV) to build, but because of many shortcomings, we finally abandoned this method.
+In the early stage, we were going to adopt [using ffserver and ffmpeg to RSTP live broadcast](https://github.com/HollowMan6/Building-CCTV/tree/master/Building-CCTV-With-RSTP-Stream-Using-ffsever) to build, but because of many shortcomings, we finally abandoned this method, and use [OpenCV to recognize faces and send to the other place with a picture](https://github.com/HollowMan6/Building-CCTV/tree/master/Building-CCTV-With-OpenCV-Face-Recognition-Sending-Pictures)
 
 Our front-end is developed by Wechat applet.
 
 ## The Back-end Structure
 
 I am responsible for writing the back-end structure.
-We use OPenCV to realize face recognition function, and use Socket programming.
+We use OpenCV to realize face recognition function, and use Socket programming.
 
 ***Please Refer to the figure for the back-end structure for more infomation.***
 
@@ -81,6 +93,6 @@ The development board also opens the receive script [Message-Receive.py](./Devel
 
 * **Server Side**:
 
-Use screen window manager to always run [receive.py](./Server/receive.py) in the background. The script receives the input request, receives the photos and puts them in the specified folder, and starts training automatically after receiving. When the recognition request is received, the picture is accepted, the recognition is carried out, and the data is returned. Refer to the source code specifically.
+Use Screen window manager to always run [receive.py](./Server/receive.py) in the background. The script receives the input request, receives the photos and puts them in the specified folder, and starts training automatically after receiving. When the recognition request is received, the picture is accepted, the recognition is carried out, and the data is returned. Refer to the source code specifically.
 
 [WXMsgReceive.py](./Server/WXMsgReceive.py) is the receipt of data from the Wechat applet.

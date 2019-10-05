@@ -42,12 +42,9 @@ def unlock():
 #获取本机IP地址
 # 与谷歌的公共DNS服务器 8.8.8.8:80建立socket连接 再返回本地socket地址
 def get_host():
-    try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
         s.connect(('8.8.8.8', 80))
         host = s.getsockname()[0]
-    finally:
-        s.close()
     return host
 
 #host是包含ip和port的元组 content为utf8字符串

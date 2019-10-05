@@ -5,12 +5,9 @@ import sys
 
 
 def get_host_ip():
-    try:
-        s = socket(AF_INET, SOCK_DGRAM)
+    with socket(AF_INET, SOCK_DGRAM) as s:
         s.connect(('8.8.8.8', 80))
         ip = s.getsockname()[0]
-    finally:
-        s.close()
     return ip
 
 
