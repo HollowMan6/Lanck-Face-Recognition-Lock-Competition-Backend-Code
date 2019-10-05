@@ -32,6 +32,8 @@
 
 ## 下面我将对我负责编写的后端结构进行说明
 
+[Python库依赖](../../network/dependencies)
+
 &emsp;&emsp;我们采用OpenCV实现人脸识别功能，并且使用Socket编程。
 
 ***后端具体结构请参照这幅图：***
@@ -74,7 +76,10 @@ Our front-end is developed by Wechat applet.
 
 ## The Back-end Structure
 
+[Python Dependencies](../../network/dependencies)
+
 I am responsible for writing the back-end structure.
+
 We use OpenCV to realize face recognition function, and use Socket programming.
 
 ***Please Refer to the figure for the back-end structure for more infomation.***
