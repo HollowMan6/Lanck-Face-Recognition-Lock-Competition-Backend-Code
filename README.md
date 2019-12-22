@@ -62,7 +62,7 @@
 
 This is a version of the Lanck Face Recognition Competition Backend Code by Teamwork.
 
-Our team won [the third prize and 1000 yuan prize](](http://lanck.lzu.edu.cn/?p=473)) in Lanzhou University Lanck Club *[Lanck Face Recognition Lock Competition](http://lanck.lzu.edu.cn/?P=456)*, which is the result of our team's cooperation.
+Our team won [the third prize and 1000 yuan prize](http://lanck.lzu.edu.cn/?p=473) in Lanzhou University Lanck Club *[Lanck Face Recognition Lock Competition](http://lanck.lzu.edu.cn/?P=456)*, which is the result of our team's cooperation.
 
 We refer to a lot of information during the competition, and here are no longer listed one by one. Our project is not perfect, there are some problems such as low accuracy of face recognition. Now I open source the back-end code, hoping to give you some reference.
 
