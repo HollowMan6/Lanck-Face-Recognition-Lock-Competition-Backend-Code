@@ -6,6 +6,7 @@
 [![watchers](https://img.shields.io/github/watchers/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code?style=social)](../../watchers)
 [![stars](https://img.shields.io/github/stars/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code?style=social)](../../stargazers)
 [![forks](https://img.shields.io/github/forks/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code?style=social)](../../network/members)
+![Python package](https://github.com/HollowMan6/Lanck-Face-Recognition-Lock-Competition-Backend-Code/workflows/Python%20package/badge.svg)
 
 [![Open Source Love](https://img.shields.io/badge/-%E2%9D%A4%20Open%20Source-Green?style=flat-square&logo=Github&logoColor=white&link=https://hollowman6.github.io/fund.html)](https://hollowman6.github.io/fund.html)
 [![GPL Licence](https://img.shields.io/badge/license-GPL-blue)](https://opensource.org/licenses/GPL-3.0/)
