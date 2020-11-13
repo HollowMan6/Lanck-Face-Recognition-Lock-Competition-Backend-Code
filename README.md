@@ -17,6 +17,12 @@
 
 (English version is down below)
 
+**软件著作权（我们团队合作成果，整体著作权归属兰州大学）：**
+
+**Software Copyright(Our Team cooperation effort, whole project rights belong to Lanzhou University.)**
+
+![](2019SR1388115.jpg)
+
 ## 简介
 
 我们团队在兰州大学兰客社[人脸识别门禁系统大赛](http://lanck.lzu.edu.cn/?p=456)之中荣获 **[三等奖与1000元奖金](http://lanck.lzu.edu.cn/?p=473)**，这是我们团队合作完成的比赛成果。
