@@ -48,7 +48,6 @@ def face_recognition(index,FaceRecognitionCollectSuccess_flag):
                 count += 1
                 cv2.imwrite(path, gray[y: y + h, x: x + w])   # 保存图像
 
-            img = Image.open(path).convert("L")
             img_BGR = cv2.imread(path)
             img_GRAY = cv2.cvtColor(img_BGR, cv2.COLOR_BGR2GRAY)
             card,confidence = recognizer.predict(img_GRAY)
