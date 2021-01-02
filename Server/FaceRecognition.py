@@ -3,7 +3,6 @@
 #=====PART4 人脸识别=====
 import cv2
 import os
-from PIL import Image
 
 #传入index,FaceRecognitionCollectSuccess_flag，传出opendoor_flag
 def face_recognition(index,FaceRecognitionCollectSuccess_flag):
