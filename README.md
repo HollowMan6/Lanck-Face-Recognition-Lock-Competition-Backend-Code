@@ -21,7 +21,7 @@
 
 **Software Copyright(Our Team cooperation effort, whole project rights belong to Lanzhou University.)**
 
-![](2019SR1388115.jpg)
+![](https://hollowman6.github.io/img/software-copyright/2019SR1388115.jpg)
 
 ## 简介
 
